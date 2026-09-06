@@ -1,0 +1,36 @@
+// Preserve the undergraduate template; adapt longer titles and nested paper lists.
+body { font-size: 1rem; }
+h1 { line-height: 1.2; }
+.semester-label { font-size: 1.25rem; color: #666; display: inline-block; }
+.instructor-section { margin-top: 2rem; display: flow-root; }
+.header-texture { pointer-events: none; }
+.site-nav .page-link { font-size: .875rem; }
+.site-nav .page-link[aria-current="page"] { border-bottom: 2px solid #fff; }
+.site-nav .menu-icon { border: 0; background: transparent; cursor: pointer; }
+.lecture-container .content { width: 100%; min-width: 0; }
+ul#archive > li { padding: 1rem 0 1.25rem; }
+ul#archive h2 { padding-top: 0; margin-bottom: .5rem; font-size: 1.35rem; }
+.paper-list-heading { font-size: 1rem; font-style: normal !important; margin: 1rem 0 .4rem; font-weight: 600; }
+.paper-list { margin: .5rem 0 1rem 1.5rem; }
+ul#archive .paper-list li, .paper-list li { border: 0; background: transparent; padding: 0 0 .85rem .2rem; }
+.paper-meta, .lecture-date { color: #555; font-size: .875rem; }
+.paper-note { margin: .25rem 0 0; }
+.resource-link { display: inline-block; margin-right: .7rem; text-decoration: underline; }
+.muted { color: #666; }
+.lecture-slides { margin: .5rem 0; }
+.reading-topic { margin: 1.75rem 0; }
+.reading-topic h2 { font-size: 1.4rem; margin-bottom: .5rem; }
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus { left: 1rem; top: 1rem; z-index: 1000; background: white; padding: .75rem; }
+a:focus-visible, button:focus-visible { outline: 3px solid #f66733; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .site-header .wrapper { padding-top: 1.2rem; }
+  .site-header table { margin-top: 2rem; }
+  .site-title, .site-title a { font-size: 1.4rem; line-height: 1.2; letter-spacing: -.3px; }
+  .site-header td:first-child img { width: 56px; }
+  .site-nav .menu-icon { height: 36px; padding: 8px; }
+  .site-nav:hover .trigger { display: none; }
+  .site-nav.is-open .trigger { display: block; padding-bottom: 5px; }
+  .site-nav .page-link[aria-current="page"] { border-color: #336699; }
+  .paper-list { overflow-wrap: anywhere; }
+}

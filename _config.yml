@@ -1,0 +1,38 @@
+# Graduate course settings
+course_name: Advanced Computer Networks
+course_semester: "Fall 2026"
+course_description: >-
+  This graduate course explores research and emerging systems in computer networks.
+  Building on undergraduate networking fundamentals, it examines networking for AI,
+  AI for networking, satellite communication, wireless and mobile networks, and edge computing.<br /><br />
+  Lectures introduce key concepts and system designs, while paper presentations and
+  discussions help students critically assess research problems, technical approaches,
+  experimental evidence, and open challenges.<br /><br />
+  Lecture slides and the papers discussed in each class are available on the Lectures page.
+  The Reading List organizes course papers by topic.
+baseurl: "/acn-2026"
+url: "https://huangqy89.github.io"
+repository: huangqy89/acn-2026
+schoolname: "Sun Yat-sen University"
+schoolurl: "https://sysu.edu.cn"
+address: |
+  No.132 Outer Ring East Road,
+  Guangzhou Higher Education Mega Center,
+  Guangzhou
+markdown: kramdown
+permalink: pretty
+include: ['_images', '_css']
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'scripts', 'dist', 'requirements-build.txt', 'vendor', '.openai']
+dateformat: "%m/%d/%Y"
+future: true
+collections:
+  lectures:
+    output: true
+  announcements:
+    output: false
+defaults:
+  - scope:
+      path: ""
+      type: lectures
+    values:
+      layout: lecture

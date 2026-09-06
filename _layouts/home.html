@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="home">
+  <h1>{{ site.course_name }} <span class="semester-label">/ {{ site.course_semester }}</span></h1>
+  {% include announcements.html %}
+  <h2>Course Description</h2>
+  <p>{{ site.course_description }}</p>
+  {{ content }}
+  <div class="profile-pic-gallary instructor-section">
+    <h2>Instructor</h2>
+    {% for ins in site.data.people.instructors %}
+    <div class="image--cover-container">
+      <img src="{{ ins.profile_pic | relative_url }}" class="image--cover" alt="{{ ins.name | escape }}">
+      <p><a href="{{ ins.webpage }}">{{ ins.name }}</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,5 @@
+{% for link in include.lecture.links %}
+  {% assign first_char = link.url | slice: 0 %}
+  {% if first_char == '/' %}{% assign link_url = link.url | relative_url %}{% else %}{% assign link_url = link.url %}{% endif %}
+  <a class="resource-link" href="{{ link_url | escape }}">{{ link.name | escape }}</a>
+{% endfor %}

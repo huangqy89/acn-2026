@@ -1,0 +1,16 @@
+{% assign lecture = include.lecture %}
+{% if lecture.class_date %}<p class="lecture-date">{{ lecture.class_date | date: site.dateformat }}</p>{% endif %}
+{% if lecture.tldr %}<p>{{ lecture.tldr | escape }}</p>{% endif %}
+<div class="lecture-slides"><strong>Slides:</strong>
+  {% if lecture.links.size > 0 %}{% include lecture_links.html lecture=lecture %}
+  {% else %}<span class="muted">To be posted.</span>{% endif %}
+</div>
+<h3 class="paper-list-heading">Papers for this lecture</h3>
+{% if lecture.paper_ids.size > 0 %}
+<ol class="paper-list">
+  {% for paper_id in lecture.paper_ids %}
+    {% assign paper = site.data.papers | where: 'id', paper_id | first %}
+    {% if paper %}{% include paper_item.html paper=paper prefix=lecture.slug %}{% endif %}
+  {% endfor %}
+</ol>
+{% else %}<p class="muted">The paper list will be posted before class.</p>{% endif %}

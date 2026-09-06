@@ -1,0 +1,20 @@
+---
+layout: page
+---
+{{ content }}
+{% assign lectures = site.lectures | sort: 'order' %}
+{% if lectures.size > 0 %}
+<ul id="archive">
+{% for lecture in lectures %}
+  <li class="archiveposturl">
+    <section class="lecture-container" aria-labelledby="lecture-{{ lecture.slug }}">
+      <div class="content">
+        <h2 id="lecture-{{ lecture.slug }}"><a href="{{ lecture.url | relative_url }}">{{ lecture.title | escape }}</a></h2>
+        {% include lecture_resources.html lecture=lecture %}
+        {% if lecture.content != '' %}<div class="markdown-content">{{ lecture.content }}</div>{% endif %}
+      </div>
+    </section>
+  </li>
+{% endfor %}
+</ul>
+{% else %}<p>Lecture materials will be posted here.</p>{% endif %}

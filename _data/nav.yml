@@ -1,0 +1,13 @@
+items:
+  - url: /
+    name: Home
+    icon_class: fa fa-home fa-lg
+  - url: /lectures/
+    name: Lectures
+    icon_class: fas fa-chalkboard-teacher
+  - url: /reading-list/
+    name: Reading List
+    icon_class: fas fa-list-ul
+  - url: /materials/
+    name: Materials
+    icon_class: fas fa-book-open

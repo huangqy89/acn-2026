@@ -1,0 +1,16 @@
+{% assign paper = include.paper %}
+<li id="{{ include.prefix }}{{ paper.id | slugify }}">
+  {% if paper.url and paper.url != '' %}
+    {% assign first_char = paper.url | slice: 0 %}
+    {% if first_char == '/' %}{% assign paper_url = paper.url | relative_url %}{% else %}{% assign paper_url = paper.url %}{% endif %}
+    <a href="{{ paper_url | escape }}"><strong>{{ paper.title | escape }}</strong></a>
+  {% else %}<strong>{{ paper.title | escape }}</strong>{% endif %}
+  {% if paper.authors %}<div class="paper-meta">{{ paper.authors | escape }}</div>{% endif %}
+  {% if paper.venue or paper.year %}<div class="paper-meta">{{ paper.venue | escape }}{% if paper.venue and paper.year %}, {% endif %}{{ paper.year }}</div>{% endif %}
+  {% if paper.slides and paper.slides != '' %}
+    {% assign first_char = paper.slides | slice: 0 %}
+    {% if first_char == '/' %}{% assign slides_url = paper.slides | relative_url %}{% else %}{% assign slides_url = paper.slides %}{% endif %}
+    <a class="resource-link" href="{{ slides_url | escape }}">Presentation slides</a>
+  {% endif %}
+  {% if paper.note %}<p class="paper-note">{{ paper.note | escape }}</p>{% endif %}
+</li>

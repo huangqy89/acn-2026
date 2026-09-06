@@ -1,0 +1,9 @@
+<ul class="menu">
+    {% for item in site.data.nav.items %}
+    <li>
+        <a class="page-link" {% if page.url == item.url %}aria-current="page"{% endif %} href="{{ item.url | prepend: site.baseurl }}">
+            <i class="{{ item.icon_class }}"></i> {{ item.name }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>

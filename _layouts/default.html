@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include header.html %}
+    <main id="main-content" class="page-content"><div class="wrapper">{{ content }}</div></main>
+    {% include footer.html %}
+    <script src="{{ '/static_files/site.js' | relative_url }}" defer></script>
+  </body>
+</html>
