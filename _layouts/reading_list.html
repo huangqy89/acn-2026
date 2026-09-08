@@ -6,8 +6,10 @@ layout: page
 <section class="reading-topic" aria-labelledby="{{ topic | slugify }}">
   <h2 id="{{ topic | slugify }}">{{ topic | escape }}</h2>
   {% assign topic_papers = site.data.papers | where: 'topic', topic %}
-  {% if topic_papers.size > 0 %}
-  <ol class="paper-list">{% for paper in topic_papers %}{% include paper_item.html paper=paper prefix='reading-' %}{% endfor %}</ol>
+  {% assign lecture_only_papers = topic_papers | where: 'lecture_only', true %}
+  {% assign reading_paper_count = topic_papers.size | minus: lecture_only_papers.size %}
+  {% if reading_paper_count > 0 %}
+  <ol class="paper-list">{% for paper in topic_papers %}{% unless paper.lecture_only %}{% include paper_item.html paper=paper prefix='reading-' %}{% endunless %}{% endfor %}</ol>
   {% else %}<p class="muted">Reading list to be announced.</p>{% endif %}
 </section>
 {% endfor %}

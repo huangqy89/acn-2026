@@ -5,7 +5,7 @@
     {% if first_char == '/' %}{% assign paper_url = paper.url | relative_url %}{% else %}{% assign paper_url = paper.url %}{% endif %}
     <a href="{{ paper_url | escape }}"><strong>{{ paper.title | escape }}</strong></a>
   {% else %}<strong>{{ paper.title | escape }}</strong>{% endif %}
-  {% if paper.authors %}<div class="paper-meta">{{ paper.authors | escape }}</div>{% endif %}
+  {% if paper.authors %}{% if paper.authors_inline %}<span class="paper-meta">, {{ paper.authors | escape }}</span>{% else %}<div class="paper-meta">{{ paper.authors | escape }}</div>{% endif %}{% endif %}
   {% if paper.venue or paper.year %}<div class="paper-meta">{{ paper.venue | escape }}{% if paper.venue and paper.year %}, {% endif %}{{ paper.year }}</div>{% endif %}
   {% if paper.slides and paper.slides != '' %}
     {% assign first_char = paper.slides | slice: 0 %}

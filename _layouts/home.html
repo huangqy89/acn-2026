@@ -7,6 +7,12 @@ layout: default
   <h2>Course Description</h2>
   <p>{{ site.course_description }}</p>
   {{ content }}
+  
+  <div class="course-logistics">
+    <p><strong>Time:</strong> {{ site.course_time | escape }}</p>
+    <p><strong>Room:</strong> {{ site.course_room | escape }}</p>
+  </div>
+  
   <div class="profile-pic-gallary instructor-section">
     <h2>Instructor</h2>
     {% for ins in site.data.people.instructors %}
@@ -16,4 +22,6 @@ layout: default
     </div>
     {% endfor %}
   </div>
+  
+
 </div>

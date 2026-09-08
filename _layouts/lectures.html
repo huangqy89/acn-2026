@@ -8,6 +8,12 @@ layout: page
 {% for lecture in lectures %}
   <li class="archiveposturl">
     <section class="lecture-container" aria-labelledby="lecture-{{ lecture.slug }}">
+      <div class="thumbnail">
+        {% assign thumbnail = lecture.thumbnail | default: '/static_files/lectures/intro.jpg' %}
+        <div class="center-cropped">
+          <img src="{{ thumbnail | relative_url }}" alt="" width="100" height="60" loading="lazy">
+        </div>
+      </div>
       <div class="content">
         <h2 id="lecture-{{ lecture.slug }}"><a href="{{ lecture.url | relative_url }}">{{ lecture.title | escape }}</a></h2>
         {% include lecture_resources.html lecture=lecture %}

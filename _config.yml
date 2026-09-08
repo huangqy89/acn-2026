@@ -1,6 +1,8 @@
 # Graduate course settings
 course_name: Advanced Computer Networks
 course_semester: "Fall 2026"
+course_time: "Wednesday 14:20-17:15, Week 1-17"
+course_room: "B502"
 course_description: >-
   This graduate course explores research and emerging systems in computer networks.
   Building on undergraduate networking fundamentals, it examines networking for AI,

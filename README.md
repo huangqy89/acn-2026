@@ -6,8 +6,8 @@
 
 ## 页面
 
-- **Home**：研究生课程介绍及教师信息。
-- **Lectures**：按 `order` 排序，每次课同时显示课件链接和有序论文列表。
+- **Home**：研究生课程介绍、上课时间和地点及教师信息。
+- **Lectures**：沿用本科课程的左图右文布局，按 `order` 排序，右侧显示 topic、简介、课件及其他链接和有序论文列表。
 - **Reading List**：按主题列出论文；与 Lectures 共用 `_data/papers.yml`。
 - **Materials**：补充学习资料。
 
@@ -25,7 +25,7 @@
 4. 在 **Actions → Build and deploy course website** 运行工作流，或提交一次更新触发构建。
 5. 等待工作流完成，再打开上面的课程网址。
 
-若使用其他仓库名，请同步修改 `_config.yml` 中的 `baseurl` 和 `repository`。目前没有在 GitHub 上创建或启用这个仓库。
+若使用其他仓库名，请同步修改 `_config.yml` 中的 `baseurl` 和 `repository`。仓库已创建并上传；发布状态请查看 Actions。
 
 也可以在本地使用 Git 上传（在本项目目录执行）：
 
@@ -75,6 +75,7 @@ type: lecture
 order: 2
 title: "Lecture 2: Networking for AI"
 tldr: "A brief description of this lecture."
+thumbnail: /static_files/lectures/intro.jpg
 # 确认时间后再填写，省略时不显示日期。
 # class_date: 2026-09-14
 links:
@@ -89,6 +90,8 @@ paper_ids:
 Optional lecture notes in Markdown.
 ```
 
+`thumbnail` 指定左侧缩略图；可将自己的 topic 图片上传到 `static_files/lectures/` 后修改该路径。省略时使用 Introduction 图片。`links` 可包含 PPT、PDF 和其他相关网页，`name` 是显示的链接文字。
+
 `order` 决定课次顺序，`paper_ids` 的顺序决定这次课中论文列表的显示顺序。
 同一节课可添加多份课件及任意数量的论文。没有资料时保留 `links: []` 和 `paper_ids: []`，页面不会生成无效下载链接。
 
@@ -96,7 +99,7 @@ Optional lecture notes in Markdown.
 
 | 内容 | 文件 |
 | --- | --- |
-| 课程名称、学期、简介、网址 | `_config.yml` |
+| 课程名称、学期、时间、地点、简介、网址 | `_config.yml` |
 | 教师姓名、照片、主页 | `_data/people.yml` |
 | 导航 | `_data/nav.yml` |
 | 阅读主题及顺序 | `_data/reading_topics.yml` |
@@ -112,8 +115,18 @@ GitHub Pages 使用标准 Jekyll 构建。安装 Ruby 和 Bundler 后：
 
 ```bash
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --config "_config.yml,scripts/_config.local.yml" -l -H localhost --force_polling
 ```
+
+保持这个终端运行，在浏览器打开 `http://localhost:4000/`。修改课程 Markdown、论文数据或模板后，Jekyll 会自动构建并刷新浏览器。`--force_polling` 使用轮询检测文件变化，适用于 Windows 和同步文件夹。本地配置文件将 `baseurl` 设为空，避免 Windows 命令行丢失空字符串参数。修改配置文件后仍需重启服务。
+
+预览运行期间，独立构建检查请使用不同的输出目录：
+
+```bash
+bundle exec jekyll build --destination dist/build-check
+```
+
+不要同时用普通 `jekyll build` 覆盖预览服务的 `_site`：它默认使用发布配置中的 `/acn-2026` 前缀，会覆盖本地预览链接。
 
 没有 Ruby 时，可用附带的 Python 辅助程序生成当前模板的静态预览。它复用同一套 Liquid/SCSS 文件，仅支持本课程模板涉及的语法，不替代完整 Jekyll：
 
