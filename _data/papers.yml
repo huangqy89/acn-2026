@@ -1,5 +1,39 @@
 # Add papers here, then refer to their IDs in a lecture's paper_ids.
 # See README.md for a complete example.
+- id: pagedattention
+  lecture_only: true
+  title: "Efficient Memory Management for Large Language Model Serving with PagedAttention"
+  authors: "Woosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng, Cody Hao Yu, Joseph E. Gonzalez, Hao Zhang, Ion Stoica"
+  venue: "SOSP"
+  year: 2023
+  topic: "LLM Serving"
+  url: "https://arxiv.org/pdf/2309.06180"
+  slides: "/static_files/papers/PagedAttention_SOSP23.pdf"
+- id: sarathi-serve
+  lecture_only: true
+  title: "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve"
+  authors: "Amey Agrawal, Nitin Kedia, Ashish Panwar, Jayashree Mohan, Nipun Kwatra, Bhargav Gulavani, Alexey Tumanov, Ramachandran Ramjee"
+  venue: "OSDI"
+  year: 2024
+  topic: "LLM Serving"
+  url: "https://www.usenix.org/system/files/osdi24-agrawal.pdf"
+  slides: "/static_files/papers/OSDI2024_Sarathi-Serve.pdf"
+- id: distserve
+  lecture_only: true
+  title: "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving"
+  authors: "Yinmin Zhong, Shengyu Liu, Junda Chen, Jianbo Hu, Yibo Zhu, Xuanzhe Liu, Xin Jin, Hao Zhang"
+  venue: "OSDI"
+  year: 2024
+  topic: "LLM Serving"
+  url: "https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf"
+- id: mooncake
+  lecture_only: true
+  title: "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot"
+  authors: "Ruoyu Qin, Zheming Li, Weiran He, Jialei Cui, Feng Ren, Mingxing Zhang, Yongwei Wu, Weimin Zheng, Xinran Xu"
+  venue: "FAST"
+  year: 2025
+  topic: "LLM Serving"
+  url: "https://www.usenix.org/system/files/fast25-qin.pdf"
 - id: tracelab
   lecture_only: true
   title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"

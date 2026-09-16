@@ -2,7 +2,7 @@
 type: lecture
 order: 2
 title: "Lecture 1 Internet with Agents"
-tldr: "Coding agent workloads, WebSocket-based communication, and Context Protocol (MCP)."
+tldr: "Coding agent workloads, WebSocket-based communication, and Model Context Protocol (MCP)."
 thumbnail: /static_files/lectures/lecture-1-agents-icon.png
 links:
   - name: PDF
