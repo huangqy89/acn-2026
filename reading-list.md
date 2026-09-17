@@ -8,6 +8,4 @@ permalink: /reading-list/
 
 See the [Presentation Schedule]({{ '/presentation-schedule/' | relative_url }}) for presentation dates and presenters.
 
-You can record the questions you asked in the [questionnaire](https://www.wjx.top/vm/rdJEEyU.aspx).
-
 
