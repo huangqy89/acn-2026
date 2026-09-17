@@ -70,7 +70,8 @@ def build(root, output, baseurl=None, origin=None):
         site['announcements'].append(data)
     validate_content(site)
     output.mkdir(parents=True, exist_ok=True)
-    for page_path in [root/'index.md', root/'lectures.md', root/'reading-list.md', root/'materials.md']:
+    pages = [root/'index.md', root/'lectures.md', root/'reading-list.md', root/'presentation-schedule.md', root/'materials.md']
+    for page_path in pages:
         page, body = frontmatter(page_path)
         page['url'] = page.get('permalink', '/')
         html = markdown.markdown(render(body, page=page), extensions=['tables', 'fenced_code'])
@@ -87,7 +88,7 @@ def build(root, output, baseurl=None, origin=None):
     for name in ['_images', 'static_files']:
         shutil.copytree(root/name, output/name, dirs_exist_ok=True)
     (output/'.nojekyll').touch()
-    print(f'Built {4 + len(lectures)} pages in {output}')
+    print(f'Built {len(pages) + len(lectures)} pages in {output}')
 
 
 def validate_content(site):

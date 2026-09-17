@@ -8,6 +8,9 @@ items:
   - url: /reading-list/
     name: Reading List
     icon_class: fas fa-list-ul
+  - url: /presentation-schedule/
+    name: Presentation Schedule
+    icon_class: fas fa-calendar-alt
   - url: /materials/
     name: Materials
     icon_class: fas fa-book-open

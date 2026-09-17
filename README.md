@@ -9,6 +9,7 @@
 - **Home**：研究生课程介绍、上课时间和地点及教师信息。
 - **Lectures**：沿用本科课程的左图右文布局，按 `order` 排序，右侧显示 topic、简介、课件及其他链接和有序论文列表。
 - **Reading List**：按主题列出论文；与 Lectures 共用 `_data/papers.yml`。
+- **Presentation Schedule**：展示论文报告的周次、日期和报告人；已完成的报告单独标注。
 - **Materials**：补充学习资料。
 
 没有助教、Assignments 或 Laboratories 页面。未提供的课件、论文和上课日期保持待发布状态；当前 Introduction 仅作为可编辑的第一讲条目。课程介绍和阅读主题是初始草稿，可自行修改。
@@ -104,6 +105,7 @@ Optional lecture notes in Markdown.
 | 导航 | `_data/nav.yml` |
 | 阅读主题及顺序 | `_data/reading_topics.yml` |
 | 论文元信息 | `_data/papers.yml` |
+| 论文报告排期及报告人 | `_data/presentation_schedule.yml` |
 | 每次课的资料 | `_lectures/*.md` |
 | 补充资料 | `materials.md` |
 | 继承的配色 | `_sass/_user_vars.scss` |

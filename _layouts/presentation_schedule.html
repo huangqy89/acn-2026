@@ -1,0 +1,35 @@
+---
+layout: page
+---
+{{ content }}
+<div class="presentation-schedule-wrapper" role="region" aria-label="Presentation schedule" tabindex="0">
+  <table class="presentation-schedule">
+    <caption>Each presentation (including QA) takes 25 minutes</caption>
+    <thead>
+      <tr>
+        <th scope="col">Paper</th>
+        <th scope="col">Week</th>
+        <th scope="col">Date</th>
+        <th scope="col">Presenter</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign previous_week = nil %}
+      {% for presentation in site.data.presentation_schedule %}
+      {% assign paper = site.data.papers | where: 'id', presentation.paper_id | first %}
+      <tr{% if previous_week != nil and presentation.week != previous_week %} class="schedule-week-start"{% endif %}>
+        <td class="schedule-paper">
+          <span class="paper-venue">[{{ paper.venue | escape }}'{{ paper.year | append: '' | slice: -2, 2 }}]</span>
+          {% assign first_char = paper.url | slice: 0 %}
+          {% if first_char == '/' %}{% assign paper_url = paper.url | relative_url %}{% else %}{% assign paper_url = paper.url %}{% endif %}
+          <a href="{{ paper_url | escape }}">{{ paper.title | escape }}</a>
+        </td>
+        <td class="schedule-week">Week {{ presentation.week }}</td>
+        <td class="schedule-date"><time datetime="{{ presentation.date }}">{{ presentation.date | date: '%Y.%-m.%-d' }}</time></td>
+        <td class="schedule-presenter"><span lang="zh-CN">{{ presentation.presenter | escape }}</span></td>
+      </tr>
+      {% assign previous_week = presentation.week %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -27,6 +27,15 @@ ul#archive .paper-list li, .paper-list li { border: 0; background: transparent; 
 .lecture-slides { margin: .5rem 0; }
 .reading-topic { margin: 1.75rem 0; }
 .reading-topic h2 { font-size: 1.4rem; margin-bottom: .5rem; }
+.presentation-schedule-wrapper { overflow-x: auto; margin: 1.5rem 0; }
+.presentation-schedule { width: 100%; min-width: 640px; border-collapse: collapse; text-align: left; }
+.presentation-schedule caption { text-align: left; color: #555; font-size: .875rem; margin-bottom: .75rem; }
+.presentation-schedule th, .presentation-schedule td { padding: .9rem .75rem; vertical-align: top; border-bottom: 1px solid #ddd; }
+.presentation-schedule th { background: #f0f4f8; color: #234e75; }
+.presentation-schedule .schedule-week-start td { border-top: 3px solid #8096ad; }
+.presentation-schedule .schedule-paper { width: 62%; overflow-wrap: anywhere; }
+.schedule-week, .schedule-date, .schedule-presenter { white-space: nowrap; }
+.presentation-schedule-wrapper:focus-visible { outline: 3px solid #f66733; outline-offset: 3px; }
 .skip-link { position: absolute; left: -9999px; }
 .skip-link:focus { left: 1rem; top: 1rem; z-index: 1000; background: white; padding: .75rem; }
 a:focus-visible, button:focus-visible { outline: 3px solid #f66733; outline-offset: 3px; }
