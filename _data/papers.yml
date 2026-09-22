@@ -26,6 +26,7 @@
   year: 2024
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf"
+  slides: "/static_files/papers/OSDI2024_DistServe.pdf"
 - id: mooncake
   lecture_only: true
   title: "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot"
@@ -34,6 +35,7 @@
   year: 2025
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/fast25-qin.pdf"
+  slides: "/static_files/papers/fast25_Mooncake.pdf"
 - id: tracelab
   lecture_only: true
   title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
