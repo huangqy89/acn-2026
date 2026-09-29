@@ -16,12 +16,12 @@
   presenter: "张睿恺"
   week: 4
   date: "2026-09-30"
-- paper_id: "course-1-10"
-  presenter: "丁紫璇"
-  week: 4
-  date: "2026-09-30"
 - paper_id: "course-2-01"
   presenter: "李梓璇"
+  week: 4
+  date: "2026-09-30"
+- paper_id: "course-1-10"
+  presenter: "丁紫璇"
   week: 5
   date: "2026-10-10"
 - paper_id: "course-2-04"

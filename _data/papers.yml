@@ -36,6 +36,31 @@
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/fast25-qin.pdf"
   slides: "/static_files/papers/fast25_Mooncake.pdf"
+- id: agentix
+  lecture_only: true
+  title: "Agentix: An Efficient Serving Engine for LLM Agents as General Programs"
+  authors: "Michael Luo, Xiaoxiang Shi, Colin Cai, Tianjun Zhang, Justin Wong, Yichuan Wang, Chi Wang, Yanping Huang, Zhifeng Chen, Joseph E. Gonzalez, Ion Stoica"
+  venue: "NSDI"
+  year: 2026
+  topic: "LLM Serving"
+  url: "https://www.usenix.org/system/files/nsdi26-luo.pdf"
+  slides: "/static_files/papers/Agentix_NSDI26.pdf"
+- id: jitserve
+  lecture_only: true
+  title: "JITServe: SLO-aware LLM Serving with Imprecise Request Information"
+  authors: "Wei Zhang, Zhiyu Wu, Yi Mu, Rui Ning, Banruo Liu, Nikhil Sarda, Myungjin Lee, Fan Lai"
+  venue: "NSDI"
+  year: 2026
+  topic: "LLM Serving"
+  url: "https://www.usenix.org/system/files/nsdi26-zhang-wei.pdf"
+- id: servegen
+  lecture_only: true
+  title: "ServeGen: Workload Characterization and Generation of Large Language Model Serving in Production"
+  authors: "Yuxing Xiang, Xue Li, Kun Qian, Yan Zhang, Wenyuan Yu, Ennan Zhai, Xin Jin, Jingren Zhou"
+  venue: "NSDI"
+  year: 2026
+  topic: "LLM Serving"
+  url: "https://www.usenix.org/system/files/nsdi26-xiang-servegen.pdf"
 - id: tracelab
   lecture_only: true
   title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
