@@ -53,6 +53,7 @@
   year: 2026
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/nsdi26-zhang-wei.pdf"
+  slides: "/static_files/papers/nsdi26-JITServe.pdf"
 - id: servegen
   lecture_only: true
   title: "ServeGen: Workload Characterization and Generation of Large Language Model Serving in Production"
@@ -61,6 +62,7 @@
   year: 2026
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/nsdi26-xiang-servegen.pdf"
+  slides: "/static_files/papers/ServeGen_NSDI26.pdf"
 - id: tracelab
   lecture_only: true
   title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
