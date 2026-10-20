@@ -5,12 +5,12 @@ items:
   - url: /lectures/
     name: Lectures
     icon_class: fas fa-chalkboard-teacher
-  - url: /reading-list/
-    name: Reading List
-    icon_class: fas fa-list-ul
   - url: /presentation-schedule/
     name: Presentation Schedule
     icon_class: fas fa-calendar-alt
+  - url: /course-project/
+    name: Course Project
+    icon_class: fas fa-project-diagram
   - url: /materials/
     name: Materials
     icon_class: fas fa-book-open

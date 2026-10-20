@@ -63,6 +63,32 @@
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/nsdi26-xiang-servegen.pdf"
   slides: "/static_files/papers/ServeGen_NSDI26.pdf"
+- id: switchml
+  lecture_only: true
+  title: "SwitchML: Scaling Distributed Machine Learning with In-Network Aggregation"
+  authors: "Amedeo Sapio, Marco Canini, Chen-Yu Ho, Jacob Nelson, Panos Kalnis, Changhoon Kim, Arvind Krishnamurthy, Masoud Moshref, Dan Ports, Peter Richtarik"
+  venue: "NSDI"
+  year: 2021
+  topic: "Networking for AI"
+  url: "https://www.usenix.org/conference/nsdi21/presentation/sapio"
+  slides: "/static_files/papers/nsdi21_SwitchML.pdf"
+- id: taccl
+  lecture_only: true
+  title: "TACCL: Guiding Collective Algorithm Synthesis using Communication Sketches"
+  authors: "Aashaka Shah, Vijay Chidambaram, Meghan Cowan, Saeed Maleki, Madan Musuvathi, Todd Mytkowicz, Jacob Nelson, Olli Saarikivi, Rachee Singh"
+  venue: "NSDI"
+  year: 2023
+  topic: "Networking for AI"
+  url: "https://www.usenix.org/conference/nsdi23/presentation/shah"
+  slides: "/static_files/papers/nsdi23_slides_shah.pdf"
+- id: simai
+  lecture_only: true
+  title: "SimAI: Unifying Architecture Design and Performance Tuning for Large-Scale Large Language Model Training with Scalability and Precision"
+  authors: "Xizheng Wang, Qingxu Li, Yichi Xu, Gang Lu, Dan Li, Li Chen, Heyang Zhou, Linkang Zheng, Sen Zhang, Yikai Zhu, Yang Liu, Pengcheng Zhang, Kun Qian, Kunling He, Jiaqi Gao, Ennan Zhai, Dennis Cai, Binzhang Fu"
+  venue: "NSDI"
+  year: 2025
+  topic: "Networking for AI"
+  url: "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-simai"
 - id: tracelab
   lecture_only: true
   title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"

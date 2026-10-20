@@ -70,7 +70,7 @@ def build(root, output, baseurl=None, origin=None):
         site['announcements'].append(data)
     validate_content(site)
     output.mkdir(parents=True, exist_ok=True)
-    pages = [root/'index.md', root/'lectures.md', root/'reading-list.md', root/'presentation-schedule.md', root/'materials.md']
+    pages = [root/'index.md', root/'lectures.md', root/'presentation-schedule.md', root/'course-project.md', root/'materials.md']
     for page_path in pages:
         page, body = frontmatter(page_path)
         page['url'] = page.get('permalink', '/')
