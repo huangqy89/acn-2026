@@ -8,7 +8,7 @@
   year: 2023
   topic: "LLM Serving"
   url: "https://arxiv.org/pdf/2309.06180"
-  slides: "/static_files/papers/PagedAttention_SOSP23.pdf"
+  slides: "/static_files/papers/%5BLecture2%5D%20PagedAttention_SOSP23.pdf"
 - id: sarathi-serve
   lecture_only: true
   title: "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve"
@@ -17,7 +17,7 @@
   year: 2024
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/osdi24-agrawal.pdf"
-  slides: "/static_files/papers/OSDI2024_Sarathi-Serve.pdf"
+  slides: "/static_files/papers/%5BLecture2%5D%20OSDI2024_Sarathi-Serve.pdf"
 - id: distserve
   lecture_only: true
   title: "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving"
@@ -26,7 +26,7 @@
   year: 2024
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf"
-  slides: "/static_files/papers/OSDI2024_DistServe.pdf"
+  slides: "/static_files/papers/%5BLecture2%5D%20OSDI2024_DistServe.pdf"
 - id: mooncake
   lecture_only: true
   title: "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot"
@@ -35,7 +35,7 @@
   year: 2025
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/fast25-qin.pdf"
-  slides: "/static_files/papers/fast25_Mooncake.pdf"
+  slides: "/static_files/papers/%5BLecture2%5D%20fast25_Mooncake.pdf"
 - id: agentix
   lecture_only: true
   title: "Agentix: An Efficient Serving Engine for LLM Agents as General Programs"
@@ -44,7 +44,7 @@
   year: 2026
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/nsdi26-luo.pdf"
-  slides: "/static_files/papers/Agentix_NSDI26.pdf"
+  slides: "/static_files/papers/%5BLecture2%5D%20Agentix_NSDI26.pdf"
 - id: jitserve
   lecture_only: true
   title: "JITServe: SLO-aware LLM Serving with Imprecise Request Information"
@@ -53,7 +53,7 @@
   year: 2026
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/nsdi26-zhang-wei.pdf"
-  slides: "/static_files/papers/nsdi26-JITServe.pdf"
+  slides: "/static_files/papers/%5BLecture2%5D%20nsdi26-JITServe.pdf"
 - id: servegen
   lecture_only: true
   title: "ServeGen: Workload Characterization and Generation of Large Language Model Serving in Production"
@@ -62,7 +62,7 @@
   year: 2026
   topic: "LLM Serving"
   url: "https://www.usenix.org/system/files/nsdi26-xiang-servegen.pdf"
-  slides: "/static_files/papers/ServeGen_NSDI26.pdf"
+  slides: "/static_files/papers/%5BLecture2%5D%20ServeGen_NSDI26.pdf"
 - id: switchml
   lecture_only: true
   title: "SwitchML: Scaling Distributed Machine Learning with In-Network Aggregation"
@@ -71,7 +71,7 @@
   year: 2021
   topic: "Networking for AI"
   url: "https://www.usenix.org/conference/nsdi21/presentation/sapio"
-  slides: "/static_files/papers/nsdi21_SwitchML.pdf"
+  slides: "/static_files/papers/%5BLecture3%5D%20nsdi21_SwitchML.pdf"
 - id: taccl
   lecture_only: true
   title: "TACCL: Guiding Collective Algorithm Synthesis using Communication Sketches"
@@ -80,7 +80,7 @@
   year: 2023
   topic: "Networking for AI"
   url: "https://www.usenix.org/conference/nsdi23/presentation/shah"
-  slides: "/static_files/papers/nsdi23_slides_shah.pdf"
+  slides: "/static_files/papers/%5BLecture3%5D%20nsdi23_slides_shah.pdf"
 - id: simai
   lecture_only: true
   title: "SimAI: Unifying Architecture Design and Performance Tuning for Large-Scale Large Language Model Training with Scalability and Precision"
@@ -89,6 +89,51 @@
   year: 2025
   topic: "Networking for AI"
   url: "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-simai"
+  slides: "/static_files/papers/%5BLecture3%5D%20SimAI_NSDI25.pdf"
+- id: netllm
+  lecture_only: true
+  title: "NetLLM: Adapting Large Language Models for Networking"
+  authors: "Duo Wu, Xianda Wang, Yaqi Qiao, Zhi Wang, Junchen Jiang, Shuguang Cui, Fangxin Wang"
+  venue: "SIGCOMM"
+  year: 2024
+  topic: "AI for Networking"
+  url: "https://pages.mmlab.top/publications/sigcomm24-netllm.pdf"
+  slides: "/static_files/papers/%5BLecture4%5D%20NetLLM_SIGCOMM24.pdf"
+- id: from-bits-to-tokens
+  lecture_only: true
+  title: "From Bits to Tokens: Knowledge-Driven Generative Communication of Multimodal Data"
+  authors: "Xingyu Chen, Zihao Feng, Wuqiong Zhao, Jianrong Ding, Ke Sun, Xinyu Zhang"
+  venue: "NSDI"
+  year: 2026
+  topic: "AI for Networking"
+  url: "https://www.usenix.org/system/files/nsdi26-chen-xingyu.pdf"
+  slides: "/static_files/papers/%5BLecture4%5D%20NSDI%2726_From_Bits_to_Tokens.pdf"
+- id: agua
+  lecture_only: true
+  title: "Agua: A Concept-Based Explainer for Learning-Enabled Systems"
+  authors: "Sagar Patel, Dongsu Han, Nina Narodytska, Sangeetha Abdu Jyothi"
+  venue: "SIGCOMM"
+  year: 2025
+  topic: "AI for Networking"
+  url: "https://ina.kaist.ac.kr/assets/bibliography/Agua.pdf"
+- id: edgeric
+  lecture_only: true
+  title: "EdgeRIC: Empowering Real-time Intelligent Optimization and Control in NextG Cellular Networks"
+  authors: "Woo-Hyun Ko, Ushasi Ghosh, Ujwal Dinesha, Raini Wu, Srinivas Shakkottai, Dinesh Bharadia"
+  venue: "NSDI"
+  year: 2024
+  topic: "AI for Networking"
+  url: "https://www.usenix.org/system/files/nsdi24-ko.pdf"
+  slides: "/static_files/papers/%5BLecture4%5D%20NSDI2024_EdgeRIC.pdf"
+- id: ranpilot
+  lecture_only: true
+  title: "RANPilot: Making AI Functionalities Robust to Dynamic O-RAN Reconfigurations"
+  authors: "Shiming Yu, Leming Shen, Jianing Zhang, Xin Li, Xianjin Xia, Yuanqing Zheng, Yaxiong Xie"
+  venue: "SIGCOMM"
+  year: 2026
+  topic: "AI for Networking"
+  url: "https://arxiv.org/pdf/2607.05038"
+  slides: "/static_files/papers/%5BLecture4%5D%20RANPilot_SIGCOMM26.pdf"
 - id: tracelab
   lecture_only: true
   title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
