@@ -134,6 +134,33 @@
   topic: "AI for Networking"
   url: "https://arxiv.org/pdf/2607.05038"
   slides: "/static_files/papers/%5BLecture4%5D%20RANPilot_SIGCOMM26.pdf"
+- id: starlink-performance
+  lecture_only: true
+  title: "A Multifaceted Look at Starlink Performance"
+  authors: "Nitinder Mohan, Andrew Ferguson, Hendrik Cech, Prakita Rayyan Renatin, Rohan Bose, Mahesh Marina, Jörg Ott"
+  venue: "WWW"
+  year: 2024
+  topic: "Satellite Communication"
+  url: "https://arxiv.org/pdf/2310.09242"
+  slides: "/static_files/papers/%5BLecture5%5D%20WWW%2724-A%20Multifaceted%20Look%20at%20Starlink%20Performance.pdf"
+- id: tinyleo
+  lecture_only: true
+  title: "Small-scale LEO Satellite Networking for Global-scale Demands"
+  authors: "Yuanjie Li, Yimei Chen, Jiabo Yang, Jinyao Zhang, Bowen Sun, Lixin Liu, Hewu Li, Jianping Wu, Zeqi Lai, Qian Wu, Jun Liu"
+  venue: "SIGCOMM"
+  year: 2025
+  topic: "Satellite Communication"
+  url: "https://tinyleo-toolkit.github.io/TinyLEO/static/pdfs/sigcomm25-tinyleo.pdf"
+  slides: "/static_files/papers/%5BLecture5%5D%20SIGCOMM%2725-Small-scale%20LEO%20Satellite%20Networking%20for%20Global-scale%20Demands.pdf"
+- id: democratizing-direct-to-cell
+  lecture_only: true
+  title: "Democratizing Direct-to-Cell Low Earth Orbit Satellite Networks"
+  authors: "Lixin Liu, Yuanjie Li, Hewu Li, Jiabo Yang, Wei Liu, Jingyi Lan, Yufeng Wang, Jiarui Li, Jianping Wu, Qian Wu, Jun Liu, Zeqi Lai"
+  venue: "NSDI"
+  year: 2024
+  topic: "Satellite Communication"
+  url: "https://www.usenix.org/system/files/nsdi24-liu-lixin.pdf"
+  slides: "/static_files/papers/%5BLecutre5%5D%20nsdi24_Democratizing%20Direct-to-Cell.pdf"
 - id: tracelab
   lecture_only: true
   title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
